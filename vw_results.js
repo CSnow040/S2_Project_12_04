@@ -24,7 +24,14 @@
       
 */
 
+var reportHTML = "<h1>" + raceTitle + "</h1>";
 
+for (var i = race; i++;) {
+    var totalVotes = 0;
+    votes[i].forEach(calcSum);
+    reportHTML += "<table><caption>" + race[i] + "</caption> <tr><th>Candidate</th><th>Votes</th<tr>";
+    reportHTML += candidateRows();
+}
 
 
 
